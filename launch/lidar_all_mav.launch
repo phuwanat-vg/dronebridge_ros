@@ -1,0 +1,6 @@
+<launch> 
+    <include file="$(find ydlidar_ros_driver)/launch/TG.launch" /> 
+    <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch" /> 
+    <include file="$(find dronebridge_ros)/launch/bridge_mavros.launch" /> 
+    <include file="$(find dronebridge_ros)/launch/lidar_to_mavros.launch" /> 
+</launch>
