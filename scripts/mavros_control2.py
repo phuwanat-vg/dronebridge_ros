@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##
 #
@@ -147,7 +147,7 @@ def simple_demo():
     rospy.sleep(1)
 
     print("Takeoff")
-    c.takeoff(1.0)
+    c.takeoff(3.0)
     rospy.sleep(7)
 
     r = 1
