@@ -25,7 +25,7 @@
     <param name="roll_cam"          value="0" />
     <param name="pitch_cam"         value="0" />
     <param name="yaw_cam"           value="0" />
-    <param name="gamma_world"       value="-1.5707963" />
+    <param name="gamma_world"       value="0" />
 
     <node pkg="dronebridge_ros" type="vision_mavros_node" name="t265_to_mavros" output="screen" >
         <remap from="vision_pose" to="/mavros/vision_pose/pose" />

@@ -46,7 +46,7 @@ class px4Agent:
           print("waypoint is updated")
 
      def target_callback(self, target_in):
-          p = [target_in.x, target_in.y, 0.3, target_in.theta]
+          p = [target_in.x, target_in.y, 1.0, target_in.theta]
           self.update_waypoint(p)
 
      def pose_callback(self, pose_in):
@@ -133,7 +133,7 @@ class px4Agent:
 
           self.point.pose.position.x = 0.0
           self.point.pose.position.y = 0.0
-          self.point.pose.position.z = 0.3
+          self.point.pose.position.z = 1.0
 
           self.point.pose.orientation.x = 0.0
           self.point.pose.orientation.y = 0.0
@@ -197,6 +197,7 @@ class px4Agent:
                time.sleep(0.1)
           
           self.wp_mode = True
+          
           
              
 
